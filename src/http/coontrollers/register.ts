@@ -30,7 +30,7 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
       })
     }
 
-    return reply.status(500).send() // :TODO: fix ME
+    throw err
   }
 
   return reply.status(201).send()
